@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- गोल्ड रंग का गोल बटन -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#FFD700" />
+    <stroke android:width="2dp" android:color="#B8860B" />
+</shape>

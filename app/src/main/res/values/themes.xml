@@ -1,0 +1,20 @@
+<resources>
+    <style name="Theme.CustomerApp" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">#121214</item>
+        <item name="colorPrimary">#6C5CE7</item>
+        <item name="colorAccent">#3AAA8C</item>
+    </style>
+
+    <style name="Field">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/bg_field</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">#8A8A94</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

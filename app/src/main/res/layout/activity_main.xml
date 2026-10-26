@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121214"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ऊपर: फोटो, नाम, बैकअप बटन -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/profile" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mannat Communication"
+                    android:textColor="#6C5CE7"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jio AirFiber Customer Records"
+                    android:textColor="#B0B0B8"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnBackup"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_backup_btn"
+                android:contentDescription="बैकअप / रीस्टोर"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_power" />
+        </LinearLayout>
+
+        <!-- बीच की पंक्ति: Tarsem ji | कैमरा बटन | मोबाइल -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tarsem ji"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/btnCamera"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/bg_camera_btn"
+                android:contentDescription="आधार फ़ोटो"
+                android:padding="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_camera" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="M: 9988863580"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/Field"
+            android:layout_marginTop="20dp"
+            android:hint="Customer Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etFather"
+            style="@style/Field"
+            android:hint="Father Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etMobile"
+            style="@style/Field"
+            android:hint="Mobile Number (optional)"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            style="@style/Field"
+            android:hint="Location" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            style="@style/Field"
+            android:hint="Address (गाँव / मोहल्ला)" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_green"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_btn_outline"
+            android:text="VIEW / EDIT CUSTOMERS"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
